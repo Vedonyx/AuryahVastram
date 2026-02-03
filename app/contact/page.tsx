@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 
 export default function ContactPage() {
-  const transition = { duration: 1.2, ease: [0.25, 1, 0.5, 1] };
+  const transition = { duration: 1.2, ease: [0.25, 1, 0.5, 1] as any };
 
   return (
     <div className="bg-[#fafaf9] min-h-screen pt-32 pb-20">

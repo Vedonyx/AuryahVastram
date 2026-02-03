@@ -18,11 +18,11 @@ export default function Home() {
         lenis = new Lenis({
           duration: 1.2,
           easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-          smooth: true,
+          // smooth: true,
           mouseMultiplier: 1,
           smoothTouch: false,
           touchMultiplier: 2,
-        });
+        } as any);
 
         function raf(time: number) {
           lenis.raf(time);
@@ -130,7 +130,7 @@ export default function Home() {
           borderColor: isHovered ? "#C5A059" : "rgba(28, 25, 23, 0.3)",
           scale: isClicking ? 0.9 : 1
         }}
-        transition={{ duration: 0.3, ease: "easeOut" }}
+        transition={{ duration: 0.3, ease: "easeOut" as any }}
       />
 
       {/* Navigation */}

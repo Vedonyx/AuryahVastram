@@ -40,7 +40,7 @@ export function Preloader() {
         initial: { height: "100%" },
         exit: {
             height: 0,
-            transition: { duration: 1.2, ease: [0.87, 0, 0.13, 1] } // Ultra-smooth "luxury" easing
+            transition: { duration: 1.2, ease: [0.87, 0, 0.13, 1] as any } // Ultra-smooth "luxury" easing
         }
     };
 
@@ -50,7 +50,7 @@ export function Preloader() {
             opacity: 1,
             scale: 1,
             filter: "blur(0px)",
-            transition: { duration: 1.5, ease: "easeOut" }
+            transition: { duration: 1.5, ease: "easeOut" as any }
         },
         exit: {
             opacity: 0,
